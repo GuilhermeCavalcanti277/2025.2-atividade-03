@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards de Disciplinas</title>
+    <link rel="stylesheet" href="cards.css">
+
+    <!-- Ícones Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header class="topbar">
+        <h1>Disciplinas Ofertadas</h1>
+
+        <!-- Barra de busca -->
+        <input type="text" id="searchInput" placeholder="Buscar disciplina...">
+
+        <!-- Botão de modo escuro -->
+        <button id="darkModeToggle">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </header>
+
+    <!-- Filtros -->
+    <div class="filtros">
+        <button class="filtro ativo" data-tec="all">Todas</button>
+        <button class="filtro" data-tec="HTML">HTML</button>
+        <button class="filtro" data-tec="CSS">CSS</button>
+        <button class="filtro" data-tec="JavaScript">JavaScript</button>
+        <button class="filtro" data-tec="Python">Python</button>
+    </div>
+
+    <div class="container">
+
+        <!-- CARD 1 - Web Design -->
+        <div class="card" data-tec="HTML CSS JavaScript">
+            <div class="card-header gradient1">
+                <h2>Web Design</h2>
+                <p class="professores">Prof. Danielle Freitas e Prof. Leonardo Minora</p>
+            </div>
+
+            <div class="card-content">
+                <h3><i class="fa-solid fa-bullseye"></i> Objetivo</h3>
+                <p>Capacitar alunos no desenvolvimento de interfaces web modernas e responsivas.</p>
+
+                <h3><i class="fa-solid fa-clock"></i> Carga Horária</h3>
+                <p>80 horas</p>
+
+                <h3><i class="fa-solid fa-code"></i> Tecnologias</h3>
+                <ul class="tecnologias">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+
+                <h3><i class="fa-solid fa-lightbulb"></i> Conceitos</h3>
+                <ul class="conceitos">
+                    <li>Controle de versão</li>
+                    <li>Design de interfaces</li>
+                </ul>
+            </div>
+
+            <div class="card-footer">
+                <h3><i class="fa-solid fa-calendar"></i> Horários</h3>
+                <p><strong>Segunda:</strong> 14h às 18h - Lab 6</p>
+                <p><strong>Terça:</strong> 14h às 18h - Lab 6</p>
+            </div>
+        </div>
+
+        <!-- CARD 2 - Programação Python -->
+        <div class="card" data-tec="Python">
+            <div class="card-header gradient2">
+                <h2>Programação Python</h2>
+                <p class="professores">Prof. João Henrique</p>
+            </div>
+
+            <div class="card-content">
+                <h3><i class="fa-solid fa-bullseye"></i> Objetivo</h3>
+                <p>Introduzir lógica e programação com foco em Python.</p>
+
+                <h3><i class="fa-solid fa-clock"></i> Carga Horária</h3>
+                <p>60 horas</p>
+
+                <h3><i class="fa-solid fa-code"></i> Tecnologias</h3>
+                <ul class="tecnologias">
+                    <li>Python</li>
+                </ul>
+
+                <h3><i class="fa-solid fa-lightbulb"></i> Conceitos</h3>
+                <ul class="conceitos">
+                    <li>Lógica de programação</li>
+                    <li>Estruturas de repetição</li>
+                </ul>
+            </div>
+
+            <div class="card-footer">
+                <h3><i class="fa-solid fa-calendar"></i> Horários</h3>
+                <p><strong>Quarta:</strong> 8h às 12h - Lab 3</p>
+            </div>
+        </div>
+
+        <!-- CARD 3 - Front-End Responsivo -->
+        <div class="card" data-tec="HTML CSS JavaScript">
+            <div class="card-header gradient3">
+                <h2>Front-End Responsivo</h2>
+                <p class="professores">Prof. Camila Andrade</p>
+            </div>
+
+            <div class="card-content">
+                <h3><i class="fa-solid fa-bullseye"></i> Objetivo</h3>
+                <p>Ensinar técnicas avançadas para sites responsivos e acessíveis.</p>
+
+                <h3><i class="fa-solid fa-clock"></i> Carga Horária</h3>
+                <p>70 horas</p>
+
+                <h3><i class="fa-solid fa-code"></i> Tecnologias</h3>
+                <ul class="tecnologias">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+
+                <h3><i class="fa-solid fa-lightbulb"></i> Conceitos</h3>
+                <ul class="conceitos">
+                    <li>Responsividade</li>
+                    <li>Mobile First</li>
+                </ul>
+            </div>
+
+            <div class="card-footer">
+                <h3><i class="fa-solid fa-calendar"></i> Horários</h3>
+                <p><strong>Sexta:</strong> 8h às 12h - Lab 8</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

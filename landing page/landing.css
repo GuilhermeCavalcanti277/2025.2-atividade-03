@@ -1,0 +1,474 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variáveis de cor */
+:root {
+  --primary-color: #1a472a;
+  --secondary-color: #ff6b35;
+  --light-bg: #f8f9fa;
+  --text-color: #333;
+  --text-secondary: #555;
+  --transition: 0.3s;
+}
+
+/* Dark mode */
+body.dark {
+  background: #121212;
+  color: #e1e1e1;
+}
+
+body.dark .topbar {
+  background: #0f2b18;
+}
+
+body.dark .btn-cta {
+  background: #ff8a3d;
+}
+
+body.dark .section.bg-light {
+  background: #1e1e1e;
+}
+
+/* Tipografia e corpo */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: var(--light-bg);
+  color: var(--text-color);
+  transition: background var(--transition), color var(--transition);
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Topbar */
+.topbar {
+  background: var(--primary-color);
+  color: white;
+  padding: 1rem 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background var(--transition);
+}
+
+.topbar-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background var(--transition);
+}
+
+.nav-menu li a:hover,
+.nav-menu li a:focus {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.topbar-actions input {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Dark mode toggle */
+#darkModeToggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform var(--transition);
+}
+#darkModeToggle:hover {
+  transform: scale(1.1);
+}
+
+/* Hero / Carrossel */
+.hero {
+  margin-top: 70px;
+  position: relative;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.carousel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  height: 100%;
+  transition: transform var(--transition);
+}
+
+.carousel-item {
+  min-width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 2rem;
+  border: none;
+  padding: 0 15px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+}
+
+.hero-content h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.btn-cta {
+  background: var(--secondary-color);
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background var(--transition), transform var(--transition);
+}
+
+.btn-cta:hover,
+.btn-cta:focus {
+  transform: translateY(-3px);
+  background: darken(var(--secondary-color), 10%);
+}
+
+/* Seções */
+.section {
+  padding: 80px 20px;
+  transition: background var(--transition), color var(--transition);
+}
+
+.bg-light {
+  background: var(--light-bg);
+}
+
+/* Títulos */
+.section h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+  color: var(--primary-color);
+  position: relative;
+}
+.section h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: var(--secondary-color);
+  margin: 20px auto 0;
+  border-radius: 2px;
+}
+
+/* Grid de conteúdo */
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.content-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.content-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.content-card h3 {
+  margin-bottom: 15px;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.content-card p,
+.content-card ul {
+  color: var(--text-secondary);
+}
+
+.content-card ul li {
+  margin-bottom: 8px;
+}
+
+/* Atuação */
+.atuacao-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.atuacao-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  border-left: 5px solid var(--primary-color);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.atuacao-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.atuacao-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.atuacao-card ul li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+
+.atuacao-card ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--secondary-color);
+}
+
+/* Tabela da Ficha Técnica */
+.ficha-table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.ficha-table th,
+.ficha-table td {
+  padding: 20px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.ficha-table th {
+  background: var(--primary-color);
+  color: white;
+  width: 40%;
+}
+
+.ficha-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Depoimentos */
+.depoimentos-carousel {
+  position: relative;
+  overflow: hidden;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.depoimento-item {
+  display: none;
+  text-align: center;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.depoimento-item.active {
+  display: block;
+}
+
+.depoimento-item p {
+  font-style: italic;
+  color: var(--text-secondary);
+  margin-bottom: 15px;
+}
+
+.depoimento-item h4 {
+  color: var(--primary-color);
+}
+
+/* FAQ */
+.faq-item {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.faq-question {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-size: 1.1rem;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-question i {
+  transition: transform var(--transition);
+}
+
+.faq-question[aria-expanded="true"] i {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition);
+}
+
+.faq-answer p {
+  padding: 0 10px 10px;
+  color: var(--text-secondary);
+}
+
+/* Formulário */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.btn-submit {
+  background: var(--primary-color);
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background var(--transition), transform var(--transition);
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+  transform: translateY(-3px);
+  background: darken(var(--primary-color), 10%);
+}
+
+.form-response {
+  text-align: center;
+  margin-top: 15px;
+  color: var(--secondary-color);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .section h2 {
+    font-size: 2rem;
+  }
+
+  .nav-menu {
+    display: none; /* para simplificar, pode-se implementar um menu mobile mais completo */
+  }
+}

@@ -1,0 +1,272 @@
+/* -------------------- Configurações Globais -------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    height: 100vh;
+    color: #202124;
+    background: white;
+}
+
+/* -------------------- Sidebar -------------------- */
+
+.sidebar {
+    width: 280px;
+    background: #f8f9fa;
+    border-right: 1px solid #dadce0;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+
+.sidebar-top {
+    flex: 1;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.icon-btn:hover {
+    background: #e8eaed;
+}
+
+.new-chat-box {
+    display: flex;
+    gap: 6px;
+    margin-top: 12px;
+}
+
+.new-chat {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    background: white;
+    border: 1px solid #dadce0;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.new-chat:hover {
+    background: #e8eaed;
+}
+
+.icon-small {
+    padding: 12px;
+    background: white;
+    border: 1px solid #dadce0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.icon-small:hover {
+    background: #e8eaed;
+}
+
+.sidebar-btn {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    border: none;
+    background: none;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #5f6368;
+    transition: 0.2s;
+}
+
+.sidebar-btn:hover {
+    background: #e8eaed;
+}
+
+.recent-title {
+    margin: 18px 6px 10px;
+    font-size: 11px;
+    font-weight: 500;
+    color: #5f6368;
+    text-transform: uppercase;
+}
+
+.recent-list {
+    list-style: none;
+}
+
+.recent-list li a {
+    display: block;
+    padding: 10px;
+    margin-bottom: 4px;
+    color: #202124;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.recent-list li a:hover {
+    background: #e8eaed;
+}
+
+.sidebar-bottom {
+    margin-top: auto;
+}
+
+/* -------------------- Top Bar -------------------- */
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 24px;
+    border-bottom: 1px solid #dadce0;
+}
+
+.top-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.topbar h1 {
+    font-size: 22px;
+    color: #5f6368;
+    font-weight: 400;
+}
+
+.top-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.upgrade-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    border: 1px solid #dadce0;
+    border-radius: 24px;
+    background: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.upgrade-btn:hover {
+    background: #e8eaed;
+}
+
+.star {
+    color: #fbbc05;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* -------------------- Main Content -------------------- */
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome {
+    font-size: 48px;
+    font-weight: 300;
+    color: #1a73e8;
+    margin-bottom: 40px;
+}
+
+/* -------------------- Input -------------------- */
+
+.input-area {
+    width: 100%;
+    max-width: 850px;
+    background: #f1f3f4;
+    padding: 18px 22px;
+    border-radius: 32px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.input-area input {
+    background: none;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.inline-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    border-radius: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.inline-btn:hover {
+    background: #e8eaed;
+}
+
+.small {
+    padding: 6px;
+    border-radius: 50%;
+}
+
+/* -------------------- Responsivo -------------------- */
+
+@media (max-width: 760px) {
+    .sidebar {
+        display: none;
+    }
+
+    .welcome {
+        font-size: 32px;
+    }
+
+    .inline-btn span:last-child {
+        display: none;
+    }
+}

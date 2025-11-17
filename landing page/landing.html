@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tecnologia em Análise e Desenvolvimento de Sistemas – IFRN</title>
+  <link rel="stylesheet" href="landingpage.css" />
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-content">
+      <h1>IFRN – Tecnologia TADS</h1>
+      <nav aria-label="Menu principal">
+        <ul class="nav-menu">
+          <li><a href="#perfil">Perfil do Curso</a></li>
+          <li><a href="#atuacao">Atuação Profissional</a></li>
+          <li><a href="#ficha">Ficha Técnica</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="topbar-actions">
+        <input type="text" id="searchInput" placeholder="Buscar seção ou tópico..." aria-label="Barra de busca" />
+        <button id="darkModeToggle" aria-label="Alternar modo escuro">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero com carrossel de imagens -->
+  <section class="hero" id="hero">
+    <div class="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image: url('img/ifrn-campus.jpg');"></div>
+        <div class="carousel-item" style="background-image: url('img/software-dev.jpg');"></div>
+        <div class="carousel-item" style="background-image: url('img/programming-team.jpg');"></div>
+      </div>
+      <button class="carousel-control prev" aria-label="Anterior">&#10094;</button>
+      <button class="carousel-control next" aria-label="Próximo">&#10095;</button>
+    </div>
+    <div class="hero-content">
+      <h2>Tecnologia em Análise e Desenvolvimento de Sistemas</h2>
+      <p class="hero-subtitle">Formando profissionais para projetar e construir o futuro</p>
+      <a href="#perfil" class="btn-cta">Saiba Mais</a>
+    </div>
+  </section>
+
+  <!-- Seção Perfil do Curso -->
+  <section id="perfil" class="section bg-light">
+    <div class="container">
+      <h2>Perfil do Curso</h2>
+      <div class="content-grid">
+        <div class="content-card">
+          <h3><i class="fa-solid fa-info-circle"></i> Apresentação</h3>
+          <p>O curso de Tecnologia em Análise e Desenvolvimento de Sistemas forma profissionais capazes de conceber, projetar, implementar, avaliar e manter sistemas computacionais para atender às necessidades do setor produtivo e da sociedade, com competência técnica e visão tecnológica. :contentReference[oaicite:1]{index=1}</p>
+        </div>
+        <div class="content-card">
+          <h3><i class="fa-solid fa-bullseye"></i> Objetivos</h3>
+          <p>Desenvolver nos alunos a capacidade técnica para participar de todo o ciclo de vida de software, promover a integração entre conhecimento teórico e prático e formar tecnólogos críticos capazes de propor soluções para demandas reais. :contentReference[oaicite:2]{index=2}</p>
+        </div>
+        <div class="content-card">
+          <h3><i class="fa-solid fa-star"></i> Diferenciais</h3>
+          <ul>
+            <li>Alta carga prática com 400h de prática profissional. :contentReference[oaicite:3]{index=3}</li>
+            <li>Modelo pedagógico moderno com 2.594 h de curso. :contentReference[oaicite:4]{index=4}</li>
+            <li>Avaliação positiva pelo MEC (conceito 4). :contentReference[oaicite:5]{index=5}</li>
+            <li>Coordenado por profissionais qualificados. :contentReference[oaicite:6]{index=6}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Atuação Profissional -->
+  <section id="atuacao" class="section">
+    <div class="container">
+      <h2>Perfil de Atuação Profissional</h2>
+      <div class="atuacao-grid">
+        <div class="atuacao-card">
+          <h3><i class="fa-solid fa-briefcase"></i> Áreas de Atuação</h3>
+          <ul>
+            <li>Analista de Sistemas</li>
+            <li>Arquiteto de Software</li>
+            <li>Desenvolvedor Web</li>
+            <li>Analista de Banco de Dados</li>
+            <li>Consultoria em TI</li>
+          </ul>
+        </div>
+        <div class="atuacao-card">
+          <h3><i class="fa-solid fa-cogs"></i> Competências Desenvolvidas</h3>
+          <ul>
+            <li>Modelagem e análise de sistemas</li>
+            <li>Programação em linguagens modernas</li>
+            <li>Gerenciamento de banco de dados</li>
+            <li>Metodologias ágeis e gestão de projetos</li>
+            <li>Testes, manutenção e documentação de software</li>
+          </ul>
+        </div>
+        <div class="atuacao-card">
+          <h3><i class="fa-solid fa-chart-line"></i> Mercado de Trabalho</h3>
+          <p>Com a crescente digitalização das empresas, a demanda por profissionais de TADS é alta. O tecnólogo formado pode atuar em empresas de tecnologia, startups, grandes corporações, órgãos públicos e consultorias, sendo valorizado por sua formação prática e foco tecnológico. :contentReference[oaicite:7]{index=7}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ficha Técnica -->
+  <section id="ficha" class="section bg-light">
+    <div class="container">
+      <h2>Ficha Técnica</h2>
+      <table class="ficha-table">
+        <tbody>
+          <tr>
+            <th>Duração</th>
+            <td>3 anos (6 semestres) :contentReference[oaicite:8]{index=8}</td>
+          </tr>
+          <tr>
+            <th>Carga Horária Total</th>
+            <td>2.594 horas :contentReference[oaicite:9]{index=9}</td>
+          </tr>
+          <tr>
+            <th>Turno</th>
+            <td>Presencial – Campus Natal-Central / Nova Cruz / Pau dos Ferros :contentReference[oaicite:10]{index=10}</td>
+          </tr>
+          <tr>
+            <th>Modalidade</th>
+            <td>Tecnólogo Presencial :contentReference[oaicite:11]{index=11}</td>
+          </tr>
+          <tr>
+            <th>Certificação</th>
+            <td>Diploma de Tecnólogo em Análise e Desenvolvimento de Sistemas</td>
+          </tr>
+          <tr>
+            <th>Avaliação MEC</th>
+            <td>Conceito 4 (SINAES) :contentReference[oaicite:12]{index=12}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Depoimentos (testemunhos) -->
+  <section id="depoimentos" class="section">
+    <div class="container">
+      <h2>Depoimentos de Alunos</h2>
+      <div class="depoimentos-carousel">
+        <div class="depoimento-item active">
+          <p>“O curso de TADS no IFRN me deu não só o conhecimento técnico, mas também a confiança para atuar em projetos reais.”</p>
+          <h4>– Maria, egressa</h4>
+        </div>
+        <div class="depoimento-item">
+          <p>“As horas de prática profissional fizeram toda a diferença para eu conseguir um estágio antes de me formar.”</p>
+          <h4>– João, aluno do 5° semestre</h4>
+        </div>
+        <div class="depoimento-item">
+          <p>“Os professores têm muita experiência e nos motivam a construir soluções cada vez melhores.”</p>
+          <h4>– Ana, egressa</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section bg-light">
+    <div class="container">
+      <h2>Perguntas Frequentes</h2>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Quanto tempo dura o curso?</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>O curso tem duração de 3 anos, totalizando 6 semestres. :contentReference[oaicite:13]{index=13}</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Qual é a carga horária total?</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>A carga horária total é de 2.594 horas. :contentReference[oaicite:14]{index=14}</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Qual o conceito do curso no MEC?</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>O curso obteve conceito 4 na avaliação do MEC. :contentReference[oaicite:15]{index=15}</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Posso fazer estágio durante o curso?</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Sim, há prática profissional (400 h) prevista no curso. :contentReference[oaicite:16]{index=16}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulário de Contato -->
+  <section id="contato" class="section">
+    <div class="container">
+      <h2>Contato</h2>
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" required aria-required="true" />
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required aria-required="true" />
+        </div>
+        <div class="form-group">
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Enviar</button>
+      </form>
+      <p class="form-response" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 IFRN – Curso TADS. Todos os direitos reservados.</p>
+      <p>
+        <a href="https://diatinf.ifrn.edu.br/cursos/tecnologia-em-analise-e-desenvolvimento-de-sistemas/" target="_blank"
+          >Site oficial do curso</a
+        >
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
